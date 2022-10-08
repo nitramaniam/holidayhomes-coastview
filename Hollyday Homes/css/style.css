@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Della+Respira:regular");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Della Respira", "Lato", sans-serif !important;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+ 
+    
+    
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", "Della Respira";
+} */
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6, 
+.pimg7{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url('../img/image1.jfif');
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url('../img/image4.jpg');
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url('../img/image5.jpg');
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url('../img/image7.jpeg');
+    min-height: 100%;
+}
+
+.pimg5 {
+    background-image: url('../img/image8.jpeg');
+    min-height: 100%;
+}
+.pimg6 {
+    background-image: url('../img/image9.jpeg');
+    min-height: 100%;
+}
+.pimg7 {
+    background-image: url('../img/image10.jpeg');
+    min-height: 100%;
+}
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+    padding: 0 !important;
+    text-align: center;
+}
+
+.section-luxury {
+    padding: 50px 80px !important;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    /* top: 50%; */
+    width: 100%;
+    text-align: center;
+    color: #000;
+    /* font-size: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase; */
+    margin-top: 80px;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+.header-area {
+    text-align: center;
+}
+
+.logo-area img {
+    margin-top: 200px;
+}
+
+.header-text h2 {
+    color: white;
+}
+
+
+@media(max-width:568px) {
+
+    .pimg1,
+    .pimg2,
+    .pimg3, 
+    .pimg4,
+    .pimg5,
+    .pimg6, 
+    .pimg7{
+        background-attachment: scroll;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    /* button {
+        background-color: red;
+    } */
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+} 
+  
+  .button, .button::after {
+    width: 300px;
+    height: 60px;
+    font-size: 28px;
+    font-family: "Della Respira", "Lato", sans-serif;
+    background: linear-gradient(0deg, transparent 5%, #000000 5%);
+    border: 0;
+    color: #fff;
+    box-shadow: 6px 0px 0px #00e6f6;
+    outline: transparent;
+    position: relative;
+  }
+  
+  .button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'BOOK NOW!';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  .button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+  /* FORM STYLE */
+  .form-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+  }
+  textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    color: black;
+  }
+
+
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: rgba(78, 94, 114, 0.9);
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+
+  .btn:hover, .btn:focus {
+    outline: none;
+       background-color: rgba(78, 94, 114, 1);
+  }
