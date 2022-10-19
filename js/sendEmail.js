@@ -23,7 +23,7 @@ function sendEmail() {
         Body: "Name:" + document.getElementById("name").value
             + "<br> E-mail id:" + document.getElementById("email").value
             + "<br> phone no:" + document.getElementById("phone").value
-            + "<br> message:" + document.getElementById("message").valu
+            + "<br> message:" + document.getElementById("message").value
     }).then(
       message => alert(message)
     );
