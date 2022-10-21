@@ -184,10 +184,10 @@ html {
     clip-path: var(--slice-0);
   }
   
-  .button:hover::after {
+  /* .button:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
-  }
+  } */
   
   @keyframes glitch {
     0% {
